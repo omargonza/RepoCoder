@@ -1,0 +1,12 @@
+@import 'colores';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 2rem;
+    border-bottom: 2px solid $ColorPrimario;
+    margin-right: 5px;
+}

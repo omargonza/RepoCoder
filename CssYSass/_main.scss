@@ -1,0 +1,203 @@
+@import 'colores';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 65.2%;
+    p {
+        font-size: 1.5rem;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+// Inicio -----------------------------------------------------
+.encabezado {
+    background-color: $coloroSecundario;
+    border-bottom: rgb(126, 126, 126) 1px solid;
+    h1 {
+        font-style: oblique;
+        color: $ColorPrimario;
+        font-size: 3rem;
+        margin-left: 5px;
+    }
+}
+
+.contenedor_inicio {
+    background-color: $coloroSecundario;
+    div {
+        justify-content: space-around;
+        .texto_inicio {
+            border-radius: 10px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+
+.logo {
+    filter: contrast(110%) brightness(100%) saturate(180%);
+    box-shadow:$sombra-caja;
+    border-radius: 50%;
+
+}
+
+// Sobre miss ---------------------------------------------------------------
+.contenedor_texto_sobre {
+    background-color: $coloroSecundario;
+    div {
+        .text_sobre {
+            border: 2px solid $ColorPrimario;
+            box-shadow: $sombra-caja;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .foto-sobre {
+            width: 30rem;
+            height: 100%;
+            img {
+                filter: contrast(110%) brightness(100%) saturate(180%);
+                box-shadow: $sombra-caja;
+                border-radius: 50%;
+                width: 100%;
+                height: 70%;
+            }
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+// Cursos regulares---------------------------------------------------------------
+.card-section {
+    background-color: $coloroSecundario;
+    box-shadow: $sombra-caja;
+    
+}
+
+.card-body {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid $ColorPrimario;
+}
+
+// galeria -----------------------------------------------------------------------
+.contenedor_carrusel {
+    margin: 0 auto;
+    max-width: 80rem;
+    div {
+    
+        .carousel-inner {
+            border-radius: 50%;
+
+            img {
+               
+                border: 2px solid $ColorPrimario;
+                border-radius: 50%;
+                height: 60rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .contenedor_carrusel {
+        div {
+            .carousel-inner {
+                img {
+                    height: 30rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+// contactos----------------------------------------------
+.contenedor_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    min-width: none;
+    width: 60rem;
+    height: 40rem;
+    .form_title {
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+    .form_paragraph {
+        font-weight: 300px;
+    }
+    .form_link {
+        font-weight: 400px;
+        color: #d92858;
+    }
+    .form_submit {
+        background: #d92858;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300px;
+        font-size: 1rem;
+        padding: 5px;
+        border: none;
+        border-radius: .5em;
+    }
+}
+
+.form_input {
+    width: 100%;
+    background: none;
+    color: #5757577e;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_label {
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_group {
+    position: relative;
+    --color: #5757577e;
+    margin: 20px;
+}
+
+.form_input:focus .form_label,
+.form_input:not(:placeholder-shown)+.form_label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #d92858;
+}
