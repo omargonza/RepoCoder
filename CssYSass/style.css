@@ -49,29 +49,29 @@ html body {
   font-size: 2.6rem;
 }
 
-.logo, .contenedor_texto_sobre div .foto-sobre img, .contenedor_inicio div .texto_inicio div .foto-sobre img {
+.logo, .contenedor_texto_sobre div .foto-sobre img {
   filter: contrast(110%) brightness(100%) saturate(180%);
   border-radius: 50%;
 }
 
-.contenedor_texto_sobre, .contenedor_inicio div .texto_inicio {
+.contenedor_texto_sobre {
   background-color: #e5e5f7;
 }
-.contenedor_texto_sobre div .text_sobre, .contenedor_inicio div .texto_inicio div .text_sobre {
+.contenedor_texto_sobre div .text_sobre, .contenedor_texto_sobre .contenedor_inicio div .texto_inicio, .contenedor_inicio .contenedor_texto_sobre div .texto_inicio {
   border: 2px solid #d92858;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin-bottom: 30px;
 }
-.contenedor_texto_sobre div .foto-sobre, .contenedor_inicio div .texto_inicio div .foto-sobre {
+.contenedor_texto_sobre div .foto-sobre {
   width: 30rem;
   height: 100%;
 }
-.contenedor_texto_sobre div .foto-sobre img, .contenedor_inicio div .texto_inicio div .foto-sobre img {
+.contenedor_texto_sobre div .foto-sobre img {
   width: 100%;
   height: 70%;
 }
-.contenedor_texto_sobre div .foto-sobre h2, .contenedor_inicio div .texto_inicio div .foto-sobre h2 {
+.contenedor_texto_sobre div .foto-sobre h2 {
   font-size: 2.6rem;
 }
 
