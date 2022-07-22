@@ -45,6 +45,9 @@ html body {
 .contenedor_inicio div {
   justify-content: space-around;
 }
+.contenedor_inicio div .texto_inicio {
+  border: 2px solid #d92858;
+}
 .contenedor_inicio div .texto_inicio h2 {
   font-size: 2.6rem;
 }
