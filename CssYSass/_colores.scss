@@ -3,3 +3,12 @@ radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
 $ColorPrimario: #d92858;
 $coloroSecundario: #e5e5f7;
 $sombra-caja: 0 5px 15px rgba(0, 0, 0, 0.5);
+$filtro:contrast(110%) brightness(100%) saturate(180%);
+
+
+$estilos: (
+    filtro:$filtro,
+    sombreado:$sombra-caja,
+    bordeRedondo:50%,
+  );
+  
