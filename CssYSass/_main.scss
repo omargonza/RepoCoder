@@ -37,7 +37,7 @@ html {
     div {
         justify-content: space-around;
         .texto_inicio {
-            @extend.text_sobre;
+            @extend.contenedor_texto_sobre;
             
             h2 {
                 font-size: 2.6rem;
