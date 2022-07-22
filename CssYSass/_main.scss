@@ -10,9 +10,11 @@
 
 html {
     font-size: 65.2%;
+
     p {
         font-size: 1.5rem;
     }
+
     body {
         display: flex;
         flex-direction: column;
@@ -24,6 +26,7 @@ html {
 .encabezado {
     background-color: $coloroSecundario;
     border-bottom: rgb(126, 126, 126) 1px solid;
+
     h1 {
         font-style: oblique;
         color: $ColorPrimario;
@@ -34,13 +37,18 @@ html {
 
 .contenedor_inicio {
     background-color: $coloroSecundario;
+
     div {
         justify-content: space-around;
-        .texto_inicio {
-            @extend.text_sobre;
-            border: 2px solid $ColorPrimario;
 
-            
+        .texto_inicio {
+
+            border: 2px solid $ColorPrimario;
+            box-shadow: $sombra-caja;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+
             h2 {
                 font-size: 2.6rem;
             }
@@ -50,15 +58,16 @@ html {
 
 
 .logo {
-    filter:map-get($map: $estilos, $key:filtro );
-    box-shadow:map-get($map: $estilos, $key:sombra-caja );
-    border-radius: map-get($map: $estilos, $key:bordeRedondo );
+    filter: map-get($map: $estilos, $key: filtro);
+    box-shadow: map-get($map: $estilos, $key: sombra-caja);
+    border-radius: map-get($map: $estilos, $key: bordeRedondo);
 
 }
 
 // Sobre miss ---------------------------------------------------------------
 .contenedor_texto_sobre {
     background-color: $coloroSecundario;
+
     div {
         .text_sobre {
             border: 2px solid $ColorPrimario;
@@ -66,14 +75,17 @@ html {
             border-radius: 10px;
             margin-bottom: 30px;
         }
+
         .foto-sobre {
             width: 30rem;
             height: 100%;
+
             img {
                 @extend.logo;
                 width: 100%;
                 height: 70%;
             }
+
             h2 {
                 font-size: 2.6rem;
             }
@@ -85,7 +97,7 @@ html {
 .card-section {
     background-color: $coloroSecundario;
     box-shadow: $sombra-caja;
-    
+
 }
 
 .card-body {
@@ -99,13 +111,14 @@ html {
 .contenedor_carrusel {
     margin: 0 auto;
     max-width: 80rem;
+
     div {
-    
+
         .carousel-inner {
             border-radius: 50%;
 
             img {
-               
+
                 border: 2px solid $ColorPrimario;
                 border-radius: 50%;
                 height: 60rem;
@@ -144,17 +157,21 @@ form {
     min-width: none;
     width: 60rem;
     height: 40rem;
+
     .form_title {
         font-size: 2rem;
         margin-bottom: .5em;
     }
+
     .form_paragraph {
         font-weight: 300px;
     }
+
     .form_link {
         font-weight: 400px;
         color: #d92858;
     }
+
     .form_submit {
         background: #d92858;
         color: #000;
